@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/myjs.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+
+        <div id="form">
+            <fieldset>
+                <legend><h3>Anime Fan Club Registration</h3></legend>
+                <form onsubmit="return validation()">
+
+                    <div class="form-group">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="fname">
+                        <span id="nameError" class="text-danger font-weight bold"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numb">Mobile Number</label>
+                        <input type="number" id="numb" name="phone">
+                        <span id="phoneError" class="text-danger font-weight bold"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mail">E-mail</label>
+                        <input type="email" id="mail" name="mail">
+                        <span id="mailError" class="text-danger"></span>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="location" style="margin-top: 10px;">Select your Country</label>
+                        <select name="location" id="location">
+                            <option disabled selected value="">Select an option</option>
+                            <option value="Japan">Japan</option>
+                            <option value="China">China</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Rusia">Rusia</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="UAE">UAE</option>
+                        </select>
+                        <span id="countryError" class="text-danger"></span>
+                        <br><br>
+                    </div>
+
+                    <div class="form-group">
+                        <h4>Choose your age group</h4>
+                        <input type="radio" name="age" id="radiobtn" value="15-20 Years">15-20 Years<br>
+                        <input type="radio" name="age" id="radiobtn" value="20-30 Years">20-30 Years<br>
+                        <input type="radio" name="age" id="radiobtn" value="30-40 Years">30-40 Years<br>
+                        <input type="radio" name="age" id="radiobtn" value="Above 40">Above 40<br>
+                        <span id="radioError" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <h4>Choose your favourite genres</h4>
+                        <input type="checkbox" name="genre" id="checkbtn" value="Action">Action<br>
+                        <input type="checkbox" name="genre" id="checkbtn" value="Adventure">Adventure<br>
+                        <input type="checkbox" name="genre" id="checkbtn" value="Shounen">Shounen<br>
+                        <input type="checkbox" name="genre" id="checkbtn" value="Romcom">Romcom<br>
+                        <input type="checkbox" name="genre" id="checkbtn" value="Mystery">Mystery<br>
+                        <span id="cboxError" class="text-danger"></span>
+                    </div>
+                    <br>
+
+                    <button type="submit" style="margin-left: 10px; margin-bottom: 10px;">Submit</button>
+
+                </form>
+            </fieldset>
+        </div>
+
+    </body>
+
+</html>
